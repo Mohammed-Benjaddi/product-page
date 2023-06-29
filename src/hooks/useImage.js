@@ -8,7 +8,7 @@ const useImage = (sneakersColor, direction) => {
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await import(`../assets/products/${sneakersColor}/${direction}.webp`) // change relative path to suit your needs
+        const response = await import(`../assets/products/${sneakersColor}/${direction}.webp`)
         setImage(response.default)
       } catch (err) {
         setError(err)

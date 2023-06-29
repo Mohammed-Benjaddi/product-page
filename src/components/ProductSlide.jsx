@@ -23,7 +23,6 @@ const ProductSlide = () => {
   const handleArrowRight = () => {
     const productImages = document.querySelectorAll(".product-img");
     const pagination = document.querySelectorAll(".pagination > span");
-    // console.log(pagination);
     productImages.forEach((img) => {
       img.classList.remove("active");
     });
@@ -54,7 +53,6 @@ const ProductSlide = () => {
   const checker = () => {
     const leftArrow = document.querySelectorAll("#left-arrow");
     const rightArrow = document.querySelectorAll("#right-arrow");
-    console.log("checker function");
     if (imgIndex.current === 0) {
       leftArrow[0].classList.add("stop-clicking");
       leftArrow[1].classList.add("stop-clicking");
